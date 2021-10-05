@@ -139,6 +139,7 @@ class TransRoute
 
         return $uri;
     }
+    
 
     /**
      * Get route parameter.
