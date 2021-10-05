@@ -46,7 +46,7 @@ class ClosureMock
     /**
      * Assert that closure was called n times.
      *
-     * @param  int   $times
+     * @param  int  $times
      * @return $this
      */
     public function assertWasCalledTimes($times)
@@ -71,7 +71,7 @@ class ClosureMock
     /**
      * Set expected arguments.
      *
-     * @param  array $parameters
+     * @param  array  $parameters
      * @return $this
      */
     public function withArgs(array $arguments)
@@ -84,7 +84,7 @@ class ClosureMock
     /**
      * Set return value.
      *
-     * @param  mixed $value
+     * @param  mixed  $value
      * @return $this
      */
     public function andReturn($value)
@@ -97,7 +97,7 @@ class ClosureMock
     /**
      * Check expected arguments matches arguments.
      *
-     * @param  array $arguments
+     * @param  array  $arguments
      * @return void
      */
     protected function checkArguments($arguments)

@@ -17,7 +17,7 @@ class TransRoute
     /**
      * Create new TransRoute instance.
      *
-     * @param  array $locales
+     * @param  array  $locales
      * @return void
      */
     public function __construct(array $locales = [])
@@ -78,8 +78,8 @@ class TransRoute
     /**
      * Create translated routes.
      *
-     * @param  string $uri
-     * @param  string $action
+     * @param  string  $uri
+     * @param  string  $action
      * @return void
      */
     public function trans($uri, $action)
@@ -102,9 +102,9 @@ class TransRoute
     /**
      * Make translated route for locale.
      *
-     * @param  string                    $uri
-     * @param  string|array|Closure      $action
-     * @param  string                    $locale
+     * @param  string  $uri
+     * @param  string|array|Closure  $action
+     * @param  string  $locale
      * @return \Illuminate\Routing\Route
      */
     protected function makeTransRouteForLocale($uri, $action, $locale)
@@ -122,8 +122,8 @@ class TransRoute
     /**
      * Replaces __(param) with translated values.
      *
-     * @param  string $uri
-     * @param  string $locale
+     * @param  string  $uri
+     * @param  string  $locale
      * @return string
      */
     protected function compileUri($uri, $locale)
@@ -139,12 +139,11 @@ class TransRoute
 
         return $uri;
     }
-    
 
     /**
      * Get route parameter.
      *
-     * @param  string $parameter
+     * @param  string  $parameter
      * @return string
      */
     protected function getTranslationParameter($parameter)
