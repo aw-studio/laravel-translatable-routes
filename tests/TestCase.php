@@ -2,9 +2,9 @@
 
 namespace Tests;
 
-use ReflectionProperty;
-use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use AwStudio\TranslatableRoutes\TranslatableRoutesServiceProvider;
+use Orchestra\Testbench\TestCase as OrchestraTestCase;
+use ReflectionProperty;
 
 class TestCase extends OrchestraTestCase
 {
@@ -12,13 +12,12 @@ class TestCase extends OrchestraTestCase
      * Get package providers.
      *
      * @param  \Illuminate\Foundation\Application  $app
-     *
      * @return array
      */
     protected function getPackageProviders($app)
     {
         return [
-            TranslatableRoutesServiceProvider::class
+            TranslatableRoutesServiceProvider::class,
         ];
     }
 
@@ -36,7 +35,7 @@ class TestCase extends OrchestraTestCase
      * Set protected or private class property value.
      *
      * @param  mixed  $instance
-     * @param  string $property
+     * @param  string  $property
      * @param  mixed  $value
      * @return void
      */

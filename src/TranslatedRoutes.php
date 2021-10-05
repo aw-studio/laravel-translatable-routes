@@ -17,7 +17,7 @@ class TranslatedRoutes
     /**
      * Create new TranslatedRoutes instance.
      *
-     * @param  Collection $routes
+     * @param  Collection  $routes
      * @return void
      */
     public function __construct(Collection $routes)
@@ -48,7 +48,7 @@ class TranslatedRoutes
     /**
      * Call method on all routes.
      *
-     * @param  string $method
+     * @param  string  $method
      * @param  array  $parameters
      * @return $this
      */

@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\Route;
 
 class TranslatedRoutesTest extends TestCase
 {
-    /** */
     public function setUp(): void
     {
         parent::setUp();
