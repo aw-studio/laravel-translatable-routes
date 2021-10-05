@@ -117,6 +117,7 @@ class LocalizeTest extends TestCase
 
         $closure->assertWasCalled();
     }
+    
 
     /** @test */
     public function test_translate_fails_when_not_for_current_route()
